@@ -1,11 +1,20 @@
 package com.example.creatingtableusingroomdatabase
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
+import androidx.room.Update
 
 @Dao
 interface UserDao {
     @Insert
     fun datainsert(user: User)
+
+    @Update
+    fun userUpdate(user: User,userId:Int)
+
+    @Delete
+    fun userDelete(user: User)
+
 
 }
