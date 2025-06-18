@@ -8,7 +8,7 @@ import androidx.room.Update
 @Dao
 interface UserDao {
     @Insert
-    fun datainsert(user: User)
+    fun userInsert(user: User)
 
     @Update
     fun userUpdate(user: User,userId:Int)

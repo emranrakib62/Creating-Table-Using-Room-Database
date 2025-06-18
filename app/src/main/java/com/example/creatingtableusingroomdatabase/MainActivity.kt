@@ -1,10 +1,7 @@
 package com.example.creatingtableusingroomdatabase
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.creatingtableusingroomdatabase.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +11,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val user = User(0, "Hasan", 32, "01862240062")
+        val userDao = UserDatabase.getInstance(this).getUserDao()
 
-
+        userDao.userInsert(user)
     }
 }
