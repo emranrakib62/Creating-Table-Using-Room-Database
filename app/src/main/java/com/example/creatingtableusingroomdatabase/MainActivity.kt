@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var user = User(0, "Hasan", 32, "01862240062")
+        var user = User(0, "Rakib", 32, "01862240062")
         var userDao = UserDatabase.getInstance(this).getUserDao()
 
         binding.insertbutn.setOnClickListener {
