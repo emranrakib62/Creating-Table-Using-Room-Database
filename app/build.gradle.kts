@@ -41,6 +41,9 @@ android {
 }
 
 dependencies {
+    val room_version = "2.7.1"
+
+    implementation("androidx.room:room-runtime:$room_version")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
