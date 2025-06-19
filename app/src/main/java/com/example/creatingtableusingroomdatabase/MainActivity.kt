@@ -1,5 +1,6 @@
 package com.example.creatingtableusingroomdatabase
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -14,10 +15,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         var user = User(0, "Rakib", 32, "01862240062")
-        var userDao = UserDatabase.getInstance(this).getUserDao()
+
+
+        var userDao = UserDatabase.getInstance(this)
+            .getUserDao()
 
         binding.insertbutn.setOnClickListener {
-            userDao.userInsert(user)
+           startActivity(Intent(this,CreateActivity::class.java))
+
+            //userDao.userInsert(user)
 
         }
 binding.getallbutn.setOnClickListener {
