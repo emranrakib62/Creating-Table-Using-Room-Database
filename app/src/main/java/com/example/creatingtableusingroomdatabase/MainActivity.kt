@@ -1,6 +1,7 @@
 package com.example.creatingtableusingroomdatabase
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.creatingtableusingroomdatabase.databinding.ActivityMainBinding
 
@@ -19,7 +20,12 @@ class MainActivity : AppCompatActivity() {
             userDao.userInsert(user)
 
         }
-
+binding.getallbutn.setOnClickListener {
+    var userList:List<User> = userDao.getAllUser()
+    userList.forEach{
+        Log.i("tag","${it.userid}:${it.name}\n")
+    }
+}
 
 
 
