@@ -15,11 +15,6 @@
         android:text="Insert User" />
 
 
-    <Button
-        android:id="@+id/getallbutn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Get all User" />
 
 
 </LinearLayout>
