@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             .getUserDao()
 
         binding.insertbutn.setOnClickListener {
-           startActivity(Intent(this,CreateActivity::class.java))
+           startActivity(Intent(this@MainActivity,CreateActivity::class.java))
 
             //userDao.userInsert(user)
 

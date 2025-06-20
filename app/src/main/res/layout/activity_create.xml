@@ -27,8 +27,8 @@
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your email"
-        android:inputType="textEmailAddress" />
+        android:hint="Enter your mobile"
+        android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/submitbutton"
