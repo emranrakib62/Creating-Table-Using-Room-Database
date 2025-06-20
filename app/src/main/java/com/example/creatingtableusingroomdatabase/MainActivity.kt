@@ -28,12 +28,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onResume() {
+        super.onResume()
+        var userAdapter=UserAdapter()
+
+
+
 
         var userDao = UserDatabase.getInstance(this)
             .getUserDao()
         userList=userDao.getAllUser()
 
-        super.onResume()
+        userAdapter.submitList(userList)
+
     }
 
 
