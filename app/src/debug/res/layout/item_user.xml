@@ -13,6 +13,66 @@
 
 
 
+        <TextView
+            android:textSize="20dp"
+            android:text="name"
+            android:textStyle="bold"
+            android:id="@+id/nametv"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:textSize="20dp"
+            android:text="Age"
+            android:textStyle="bold"
+            android:id="@+id/agetv"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="mobile"
+            android:id="@+id/mobiletv"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Edit"
+            android:textColor="#87CC42"
+            android:id="@+id/editbtn"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#EBBA1B"
+            android:text="Delete"
+            android:id="@+id/deletbtn"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+
+
+
 
     </LinearLayout>
 
