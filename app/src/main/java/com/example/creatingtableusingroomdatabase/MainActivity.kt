@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         var userAdapter=UserAdapter()
 
-
+binding.UserRcv.adapter=userAdapter
 
 
         var userDao = UserDatabase.getInstance(this)
