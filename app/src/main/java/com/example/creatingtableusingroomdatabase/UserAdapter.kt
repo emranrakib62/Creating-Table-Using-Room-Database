@@ -39,7 +39,11 @@ companion object{
            holder.binding.agetv.text="${it.age}"
            holder.binding.mobiletv.text=it.mobile
 
+holder.binding.editbtn.setOnClickListener{
 
+
+
+}
 
 
        }
