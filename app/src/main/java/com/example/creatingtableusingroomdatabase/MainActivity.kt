@@ -43,11 +43,11 @@ binding.UserRcv.adapter=userAdapter
     }
 
     override fun userDelete(user: User) {
-        TODO("Not yet implemented")
+
     }
 
     override fun userUpdate(user: User) {
-        TODO("Not yet implemented")
+
     }
 
 
