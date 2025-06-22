@@ -44,7 +44,10 @@ holder.binding.editbtn.setOnClickListener{
 
 
 }
+holder.binding.deletbtn.setOnClickListener{
 
+
+}
 
        }
     }
