@@ -6,7 +6,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.creatingtableusingroomdatabase.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() ,UserclickLisener{
 
     lateinit var binding: ActivityMainBinding
     lateinit var userList:List<User>
@@ -40,6 +40,14 @@ binding.UserRcv.adapter=userAdapter
 
         userAdapter.submitList(userList)
 
+    }
+
+    override fun userDelete(user: User) {
+        TODO("Not yet implemented")
+    }
+
+    override fun userUpdate(user: User) {
+        TODO("Not yet implemented")
     }
 
 
