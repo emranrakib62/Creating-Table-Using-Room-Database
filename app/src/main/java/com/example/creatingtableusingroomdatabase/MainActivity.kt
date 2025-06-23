@@ -49,7 +49,8 @@ Toast.makeText(this@MainActivity,"delete Clicked",Toast.LENGTH_LONG).show()
     }
 
     override fun userUpdate(user: User) {
-
+        Toast.makeText(this@MainActivity,"update Clicked",Toast.LENGTH_LONG).show()
+    }
     }
 
 
