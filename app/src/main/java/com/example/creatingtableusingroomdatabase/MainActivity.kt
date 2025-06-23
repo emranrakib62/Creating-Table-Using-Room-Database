@@ -1,8 +1,10 @@
 package com.example.creatingtableusingroomdatabase
 
 import android.content.Intent
+import android.health.connect.datatypes.units.Length
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.creatingtableusingroomdatabase.databinding.ActivityMainBinding
 
@@ -43,7 +45,7 @@ binding.UserRcv.adapter=userAdapter
     }
 
     override fun userDelete(user: User) {
-
+Toast.makeText(this@MainActivity,"delete Clicked",Toast.LENGTH_LONG).show()
     }
 
     override fun userUpdate(user: User) {
