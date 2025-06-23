@@ -46,6 +46,7 @@ binding.UserRcv.adapter=userAdapter
 
     override fun userDelete(user: User) {
 Toast.makeText(this@MainActivity,"delete Clicked",Toast.LENGTH_LONG).show()
+
     }
 
     override fun userUpdate(user: User) {
@@ -54,4 +55,3 @@ Toast.makeText(this@MainActivity,"delete Clicked",Toast.LENGTH_LONG).show()
     }
 
 
-} 

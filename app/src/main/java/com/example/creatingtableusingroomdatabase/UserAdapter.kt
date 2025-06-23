@@ -35,12 +35,13 @@ companion object{
 
     override fun onBindViewHolder(holder: UserViewholder, position: Int) {
        getItem(position).let {
+           var mainActivity=MainActivity()
            holder.binding.nametv.text=it.name
            holder.binding.agetv.text="${it.age}"
            holder.binding.mobiletv.text=it.mobile
 
-holder.binding.editbtn.setOnClickListener{
-
+holder.binding.editbtn.setOnClickListener{V ->
+mainActivity.userDelete()
 
 
 }
