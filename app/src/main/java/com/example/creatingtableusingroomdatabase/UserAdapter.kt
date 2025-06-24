@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.creatingtableusingroomdatabase.databinding.ItemUserBinding
 
-class UserAdapter :ListAdapter<User,UserAdapter.UserViewholder>(compator) {
+class UserAdapter (var lisener: UserclickLisener):ListAdapter<User,UserAdapter.UserViewholder>(compator) {
 
 
 
