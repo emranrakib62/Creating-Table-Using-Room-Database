@@ -45,7 +45,9 @@ binding.UserRcv.adapter=userAdapter
     }
 
     override fun userDelete(user: User) {
-Toast.makeText(this@MainActivity,"delete Clicked",Toast.LENGTH_LONG).show()
+Log .i("TAG","UserDelete: ")
+
+    //Toast.makeText(this@MainActivity,"delete Clicked",Toast.LENGTH_LONG).show()
 
     }
 
