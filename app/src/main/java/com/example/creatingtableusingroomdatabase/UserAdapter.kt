@@ -35,7 +35,7 @@ companion object{
 
     override fun onBindViewHolder(holder: UserViewholder, position: Int) {
        getItem(position).let {
-           var mainActivity=MainActivity()
+           var mainActivity:UserclickLisener=MainActivity()
            holder.binding.nametv.text=it.name
            holder.binding.agetv.text="${it.age}"
            holder.binding.mobiletv.text=it.mobile

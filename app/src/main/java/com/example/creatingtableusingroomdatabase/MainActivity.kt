@@ -45,7 +45,7 @@ binding.UserRcv.adapter=userAdapter
     }
 
     override fun userDelete(user: User) {
-Log .i("TAG","UserDelete: ")
+Log .i("TAG","UserDelete:  ${user.userid}")
 
     //Toast.makeText(this@MainActivity,"delete Clicked",Toast.LENGTH_LONG).show()
 
@@ -53,7 +53,7 @@ Log .i("TAG","UserDelete: ")
 
     override fun userUpdate(user: User) {
         //Toast.makeText(this@MainActivity,"update Clicked",Toast.LENGTH_LONG).show()
-        Log .i("TAG","UserUpdate: ")
+        Log .i("TAG","UserUpdate:  ${user.userid}")
     }
     }
 
