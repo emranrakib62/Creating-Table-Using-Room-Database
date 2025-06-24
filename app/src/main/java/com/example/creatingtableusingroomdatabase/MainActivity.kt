@@ -52,7 +52,8 @@ Log .i("TAG","UserDelete: ")
     }
 
     override fun userUpdate(user: User) {
-        Toast.makeText(this@MainActivity,"update Clicked",Toast.LENGTH_LONG).show()
+        //Toast.makeText(this@MainActivity,"update Clicked",Toast.LENGTH_LONG).show()
+        Log .i("TAG","UserUpdate: ")
     }
     }
 
