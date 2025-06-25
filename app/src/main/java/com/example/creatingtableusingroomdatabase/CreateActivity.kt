@@ -43,7 +43,7 @@ binding.submitbutton.setOnClickListener {
         val age=binding.age.text.toString()
         val email =binding.email.text.toString()
         val user=User(userID,name,age.toInt(),email)
-        userDao.userInsert(user)
+        userDao.userUpdate(user)
 
 
     }else{
