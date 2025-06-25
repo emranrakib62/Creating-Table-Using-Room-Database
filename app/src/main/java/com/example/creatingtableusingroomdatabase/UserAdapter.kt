@@ -41,12 +41,12 @@ companion object{
            holder.binding.mobiletv.text=it.mobile
 
 holder.binding.editbtn.setOnClickListener{V ->
-mainActivity.userUpdate(it)
+lisener.userUpdate(it)
 
 
 }
 holder.binding.deletbtn.setOnClickListener{V ->
-    mainActivity.userDelete(it)
+    lisener.userDelete(it)
 
 }
 
