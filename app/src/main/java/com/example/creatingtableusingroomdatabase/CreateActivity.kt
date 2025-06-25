@@ -10,16 +10,33 @@ import com.example.creatingtableusingroomdatabase.databinding.ActivityMainBindin
 
 class CreateActivity : AppCompatActivity() {
     lateinit var binding: ActivityCreateBinding
+    lateinit var userDao: UserDao
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=ActivityCreateBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val userDao=UserDatabase.getInstance(this)
+
+
+
+        userDao=UserDatabase.getInstance(this)
             .getUserDao()
+
+if(intent.hasExtra(id_key)){
+binding.submitbutton.text= update
+}
+
 
 
 binding.submitbutton.setOnClickListener {
+
+    if(binding.submitbutton.text.toString()== update){
+
+    }
+
+
     val name=binding.name.text.toString()
     val age=binding.age.text.toString()
     val email =binding.email.text.toString()
@@ -34,7 +51,7 @@ binding.submitbutton.setOnClickListener {
         const val id_key="id"
         const val name_key="name"
         const val age_key="age"
-
+        const val update="update"
         const val mobile_key="mobile"
     }
 

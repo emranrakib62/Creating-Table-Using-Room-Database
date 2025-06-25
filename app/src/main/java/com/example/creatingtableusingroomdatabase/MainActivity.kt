@@ -57,6 +57,8 @@ userDao.userDelete(user)
         var intent =Intent(this,CreateActivity::class.java)
         intent.putExtra(CreateActivity.id_key,user.userid)
         intent.putExtra(CreateActivity.name_key,user.name)
+        intent.putExtra(CreateActivity.age_key,user.age)
+        intent.putExtra(CreateActivity.mobile_key,user.mobile)
 
 startActivity(intent)
         //Toast.makeText(this@MainActivity,"update Clicked",Toast.LENGTH_LONG).show()
