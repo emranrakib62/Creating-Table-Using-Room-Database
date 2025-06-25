@@ -54,6 +54,10 @@ userDao.userDelete(user)
     }
 
     override fun userUpdate(user: User) {
+        var intent =Intent(this,CreateActivity::class.java)
+        intent.putExtra("key","value")
+
+
         //Toast.makeText(this@MainActivity,"update Clicked",Toast.LENGTH_LONG).show()
         Log .i("TAG","UserUpdate:  ${user.userid}")
     }
