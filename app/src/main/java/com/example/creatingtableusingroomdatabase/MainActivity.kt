@@ -31,7 +31,8 @@ class MainActivity : AppCompatActivity() ,UserclickLisener{
 
     override fun onResume() {
         super.onResume()
-        var userAdapter=UserAdapter()
+        var mainActivity:UserclickLisener=MainActivity()
+        var userAdapter=UserAdapter(mainActivity)
 
 binding.UserRcv.adapter=userAdapter
 
