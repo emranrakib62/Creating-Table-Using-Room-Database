@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() ,UserclickLisener{
 
     lateinit var binding: ActivityMainBinding
     lateinit var userList:List<User>
+    lateinit var  userDao:UserDao
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -37,7 +38,7 @@ class MainActivity : AppCompatActivity() ,UserclickLisener{
 binding.UserRcv.adapter=userAdapter
 
 
-        var userDao = UserDatabase.getInstance(this)
+        userDao = UserDatabase.getInstance(this)
             .getUserDao()
         userList=userDao.getAllUser()
 
@@ -47,7 +48,7 @@ binding.UserRcv.adapter=userAdapter
 
     override fun userDelete(user: User) {
 Log .i("TAG","UserDelete:  ${user.userid}")
-
+userDao.userDelete(user)
     //Toast.makeText(this@MainActivity,"delete Clicked",Toast.LENGTH_LONG).show()
 
     }
