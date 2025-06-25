@@ -10,6 +10,7 @@ import com.example.creatingtableusingroomdatabase.databinding.ActivityMainBindin
 
 class CreateActivity : AppCompatActivity() {
     lateinit var binding: ActivityCreateBinding
+    private var userID=0
     lateinit var userDao: UserDao
 
 
@@ -24,8 +25,13 @@ class CreateActivity : AppCompatActivity() {
         userDao=UserDatabase.getInstance(this)
             .getUserDao()
 
+
 if(intent.hasExtra(id_key)){
 binding.submitbutton.text= update
+userID=intent.getIntExtra(id_key,0)
+    binding.name.setText(intent.getStringExtra(name_key))
+    binding.age.setText(intent.getStringExtra(age_key))
+    binding.email.setText(intent.getStringExtra(mobile_key))
 }
 
 
@@ -33,17 +39,23 @@ binding.submitbutton.text= update
 binding.submitbutton.setOnClickListener {
 
     if(binding.submitbutton.text.toString()== update){
+        val name=binding.name.text.toString()
+        val age=binding.age.text.toString()
+        val email =binding.email.text.toString()
+        val user=User(userID,name,age.toInt(),email)
+        userDao.userInsert(user)
 
+
+    }else{
+        val name=binding.name.text.toString()
+        val age=binding.age.text.toString()
+        val email =binding.email.text.toString()
+        val user=User(0,name,age.toInt(),email)
+        userDao.userInsert(user)
     }
 
 
-    val name=binding.name.text.toString()
-    val age=binding.age.text.toString()
-    val email =binding.email.text.toString()
-    val user=User(0,name,age.toInt(),email)
 
-
-    userDao.userInsert(user)
 }
 
     }
