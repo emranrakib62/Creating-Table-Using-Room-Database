@@ -29,7 +29,13 @@ binding.submitbutton.setOnClickListener {
     userDao.userInsert(user)
 }
 
-
-
     }
+    companion object{
+        const val id_key="id"
+        const val name_key="name"
+        const val age_key="age"
+
+        const val mobile_key="mobile"
+    }
+
 }
